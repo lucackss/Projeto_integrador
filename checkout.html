@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Loja Para Todos!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header checkout-header">
+  <h1>Loja Para Todos!</h1>
+  <nav>
+    <a href="home.html">Voltar para a loja</a>
+  </nav>
+</header>
+
+<main class="checkout-page">
+  <section class="checkout-area">
+    <h2>Finalizar compra</h2>
+
+    <div class="checkout-card">
+      <h3>Dados do cliente</h3>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Nome completo">
+        <input type="email" placeholder="E-mail">
+        <input type="text" placeholder="CPF">
+        <input type="text" placeholder="Telefone">
+      </div>
+    </div>
+
+    <div class="checkout-card">
+      <h3>Endereço de entrega</h3>
+
+      <div class="form-grid">
+        <input type="text" placeholder="CEP">
+        <input type="text" placeholder="Rua">
+        <input type="text" placeholder="Número">
+        <input type="text" placeholder="Bairro">
+        <input type="text" placeholder="Cidade">
+        <input type="text" placeholder="Estado">
+      </div>
+    </div>
+
+    <div class="checkout-card">
+      <h3>Escolha como pagar</h3>
+
+      <label class="pagamento-opcao">
+        <input type="radio" name="pagamento" checked>
+        <span>Cartão de crédito</span>
+      </label>
+
+      <label class="pagamento-opcao">
+        <input type="radio" name="pagamento">
+        <span>Pix - aprovação imediata</span>
+      </label>
+
+      <label class="pagamento-opcao">
+        <input type="radio" name="pagamento">
+        <span>Boleto - aprovação em até 2 dias úteis</span>
+      </label>
+    </div>
+  </section>
+
+  <aside class="resumo-compra">
+    <h3>Resumo da compra</h3>
+
+    <div id="checkout-itens"></div>
+
+    <div class="resumo-linha">
+      <span>Produtos</span>
+      <strong id="checkout-subtotal">R$ 0,00</strong>
+    </div>
+
+    <div class="resumo-linha">
+      <span>Frete</span>
+      <strong class="gratis">Grátis</strong>
+    </div>
+
+    <div class="resumo-total">
+      <span>Você pagará</span>
+      <strong id="checkout-total">R$ 0,00</strong>
+    </div>
+
+    <button class="btn-finalizar-checkout" onclick="confirmarCompra()">
+      Confirmar compra
+    </button>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+<script>
+  carregarCheckout();
+</script>
+</body>
+</html>

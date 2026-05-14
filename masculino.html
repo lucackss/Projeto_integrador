@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Masculino</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    
+<header class="header">
+  <h1>Loja Para Todos!</h1>
+  <div class="header-right">
+    <input type="text" placeholder="Buscar produtos..." class="search">
+    <nav>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Categorias ▼</a>
+        <div class="dropdown-content">
+          <a href="home.html">Home</a>
+          <a href="promocoes.html">Promoções</a>
+          </div>
+      </div>
+      <a href="home.html">Home</a> 
+    </nav>
+    <div class="carrinho-container" onclick="abrirCarrinho()">
+      <span id="icone-carrinho">🛒</span>
+      <span id="carrinho-count">0</span>
+    </div>
+  </div>
+</header>
+    
+    <section class="categoria">
+      
+      <h2>Produtos Masculinos</h2>
+      
+      <div class="linha-produtos">
+
+        <div class="card">
+          <img src="Imagens/Tênis Esportivo Performanc.webp" alt="Tênis Esportivo Performance">
+          <h3>Tênis Esportivo Performance</h3>
+          <p>R$ 149,90</p>
+          <button onclick="abrirModal('Tênis Esportivo Performance', 'R$ 149,90', 'Imagens/Tênis Esportivo Performanc.webp', 'Tênis esportivo confortável, ideal para caminhadas, treinos leves e uso diário.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Calça Moletom Confort.webp" alt="Calça Moletom Confort">
+          <h3>Calça Moletom Confort</h3>
+          <p>R$ 119,90</p>
+          <button onclick="abrirModal('Calça Moletom Confort', 'R$ 119,90', 'Imagens/Calça Moletom Confort.webp', 'Calça de moletom confortável, perfeita para descanso, treinos leves e looks casuais.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Blusa Manga Longa Slim.webp" alt="Camiseta Manga Longa Slim">
+          <h3>Camiseta Manga Longa Slim</h3>
+          <p>R$ 79,90</p>
+          <button onclick="abrirModal('Camiseta Manga Longa Slim', 'R$ 79,90', 'Imagens/Blusa Manga Longa Slim.webp', 'Camiseta de manga longa com modelagem slim, ideal para um visual moderno e casual.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Calça Cargo Street.png" alt="Calça Cargo Street">
+          <h3>Calça Cargo Street</h3>
+          <p>R$ 109,90</p>
+          <button onclick="abrirModal('Calça Cargo Street', 'R$ 109,90', 'Imagens/Calça Cargo Street.png', 'Calça cargo com estilo urbano, bolsos funcionais e visual moderno para o dia a dia.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Tênis Casual Urbano.jpg" alt="Tênis Casual Urbano">
+          <h3>Tênis Casual Urbano</h3>
+          <p>R$ 129,90</p>
+          <button onclick="abrirModal('Tênis Casual Urbano', 'R$ 129,90', 'Imagens/Tênis Casual Urbano.jpg', 'Tênis casual urbano, versátil e fácil de combinar com diferentes estilos.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Tênis Street Style.webp" alt="Tênis Street Style">
+          <h3>Tênis Street Style</h3>
+          <p>R$ 99,90</p>
+          <button onclick="abrirModal('Tênis Street Style', 'R$ 99,90', 'Imagens/Tênis Street Style.webp', 'Tênis street style com visual moderno, ideal para looks urbanos e descontraídos.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Calça Social Slim.webp" alt="Calça Social Slim">
+          <h3>Calça Social Slim</h3>
+          <p>R$ 99,90</p>
+          <button onclick="abrirModal('Calça Social Slim', 'R$ 99,90', 'Imagens/Calça Social Slim.webp', 'Calça social slim com caimento elegante, indicada para trabalho e ocasiões formais.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="Imagens/Tênis Running Leve.webp" alt="Tênis Running Leve">
+          <h3>Tênis Running Leve</h3>
+          <p>R$ 129,90</p>
+          <button onclick="abrirModal('Tênis Running Leve', 'R$ 129,90', 'Imagens/Tênis Running Leve.webp', 'Tênis running leve, confortável e indicado para caminhadas, academia e rotina diária.')">
+            Ver Detalhes
+          </button>
+        </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p>Email: contato@luxcas.com</p>
+      <p>Telefone: (19) 99999-9999</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Atendimento</h3>
+      <p>Seg a Sex: 9h às 18h</p>
+      <p>Sábado: 9h às 13h</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Ajuda</h3>
+      <p>Trocas e Devoluções</p>
+      <p>Política de Privacidade</p>
+      <p>Termos de Uso</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Redes Sociais</h3>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>WhatsApp</p>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">
+    © 2026 - Todos os direitos reservados
+  </p>
+
+</footer>
+
+<div id="modalProduto" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <div class="modal-body">
+            <img id="modalImg" src="">
+            <div class="modal-info">
+                <h2 id="modalNome"></h2>
+                <p id="modalPreco"></p>
+                <p id="modalDescricao" style="margin: 15px 0; color: #666;"></p>
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="janela-carrinho" class="modal">
+    <div class="modal-content carrinho-lateral">
+        <span class="close" onclick="fecharCarrinho()">&times;</span>
+        <h2>Meu Carrinho</h2>
+        
+        <div id="lista-carrinho"></div>
+
+        <div class="carrinho-footer">
+            <div class="total-box">
+                <span>Total:</span>
+                <span id="valor-total">R$ 0,00</span>
+            </div>
+            <button class="btn-finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

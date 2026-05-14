@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>feminino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="top-bar">
+    <h1>Loja Para Todos!</h1> <input type="text" placeholder="Buscar produtos..." class="search">
+    <nav>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Categorias ▼</a>
+        <div class="dropdown-content">
+          <a href="masculino.html">Masculino</a>
+          <a href="promocoes.html">Promoções</a>
+        </div>
+      </div>
+      <a href="home.html">Home</a> 
+    </nav>
+  </div>
+
+  <div class="carrinho-container" onclick="abrirCarrinho()">
+    <span id="icone-carrinho">🛒</span>
+    <span id="carrinho-count">0</span>
+  </div>
+</header>
+
+<section class="categoria">
+
+  <h2>Produtos Femininos</h2>
+
+<div class="carrossel-produtos">
+  <button class="btn-scroll esquerda" onclick="rolarProdutos(this, -1)">❮</button>
+
+  <div class="linha-produtos">
+    <div class="card">
+      <img src="Imagens/Tênis Slip-On Confort.webp" alt="Tênis Slip-On Confort">
+      <h3>Tênis Slip-On Confort</h3>
+      <p>R$ 99,90</p>
+      <button onclick="abrirModal('Tênis Slip-On Confort', 'R$ 99,90', 'Imagens/Tênis Slip-On Confort.webp', 'Tênis slip-on confortável, prático e ideal para compor looks casuais no dia a dia.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Vestido_Casual.webp" alt="Vestido Casual Básico">
+      <h3>Vestido Casual Básico</h3>
+      <p>R$ 119,90</p>
+      <button onclick="abrirModal('Vestido Casual Básico', 'R$ 119,90', 'Imagens/Vestido_Casual.webp', 'Vestido casual leve, confortável e perfeito para passeios, trabalho ou momentos de lazer.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Blusa Cropped Moderna.webp" alt="Blusa Cropped Moderna">
+      <h3>Blusa Cropped Moderna</h3>
+      <p>R$ 69,90</p>
+      <button onclick="abrirModal('Blusa Cropped Moderna', 'R$ 69,90', 'Imagens/Blusa Cropped Moderna.webp', 'Blusa cropped moderna, estilosa e versátil para combinações casuais e urbanas.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Vestido_Floral.jpg" alt="Vestido Floral Primavera">
+      <h3>Vestido Floral Primavera</h3>
+      <p>R$ 99,90</p>
+      <button onclick="abrirModal('Vestido Floral Primavera', 'R$ 99,90', 'Imagens/Vestido_Floral.jpg', 'Vestido floral delicado, leve e ideal para dias ensolarados e ocasiões casuais.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Vestido_Longo.webp" alt="Vestido Longo Elegante">
+      <h3>Vestido Longo Elegante</h3>
+      <p>R$ 109,90</p>
+      <button onclick="abrirModal('Vestido Longo Elegante', 'R$ 109,90', 'Imagens/Vestido_Longo.webp', 'Vestido longo elegante, com caimento leve e visual sofisticado para diferentes ocasiões.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Blusa Básica Algodão.webp" alt="Blusa Básica Algodão">
+      <h3>Blusa Básica Algodão</h3>
+      <p>R$ 49,90</p>
+      <button onclick="abrirModal('Blusa Básica Algodão', 'R$ 49,90', 'Imagens/Blusa Básica Algodão.webp', 'Blusa básica de algodão, macia, confortável e fácil de combinar com qualquer look.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Calça Wide Leg.jpg" alt="Calça Wide Leg">
+      <h3>Calça Wide Leg</h3>
+      <p>R$ 99,90</p>
+      <button onclick="abrirModal('Calça Wide Leg', 'R$ 99,90', 'Imagens/Calça Wide Leg.jpg', 'Calça wide leg moderna, confortável e ideal para compor produções estilosas.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="Imagens/Blusa Gola Alta Elegante.png" alt="Blusa Gola Alta Elegante">
+      <h3>Blusa Gola Alta Elegante</h3>
+      <p>R$ 74,90</p>
+      <button onclick="abrirModal('Blusa Gola Alta Elegante', 'R$ 74,90', 'Imagens/Blusa Gola Alta Elegante.png', 'Blusa gola alta elegante, ideal para looks sofisticados sem abrir mão do conforto.')">
+        Ver Detalhes
+      </button>
+    </div>
+
+  </div>
+
+
+  <button class="btn-scroll direita" onclick="rolarProdutos(this, 1)">❯</button>
+</div>
+
+    
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p>Email: contato@luxcas.com</p>
+      <p>Telefone: (19) 99999-9999</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Atendimento</h3>
+      <p>Seg a Sex: 9h às 18h</p>
+      <p>Sábado: 9h às 13h</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Ajuda</h3>
+      <p>Trocas e Devoluções</p>
+      <p>Política de Privacidade</p>
+      <p>Termos de Uso</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Redes Sociais</h3>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>WhatsApp</p>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">
+    © 2026 - Todos os direitos reservados
+  </p>
+
+</footer>
+
+<div id="modalProduto" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <div class="modal-body">
+            <img id="modalImg" src="">
+            <div class="modal-info">
+                <h2 id="modalNome"></h2>
+                <p id="modalPreco"></p>
+                <p id="modalDescricao" style="margin: 15px 0; color: #666;"></p>
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="janela-carrinho" class="modal">
+    <div class="modal-content carrinho-lateral">
+        <span class="close" onclick="fecharCarrinho()">&times;</span>
+        <h2>Meu Carrinho</h2>
+        
+        <div id="lista-carrinho"></div>
+
+        <div class="carrinho-footer">
+            <div class="total-box">
+                <span>Total:</span>
+                <span id="valor-total">R$ 0,00</span>
+            </div>
+            <button class="btn-finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoções</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="top-bar">
+    <h1>Loja Para Todos!</h1>
+
+    <input type="text" placeholder="Buscar produtos..." class="search">
+
+    <nav>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Categorias ▼</a>
+        <div class="dropdown-content">
+          <a href="masculino.html">Masculino</a>
+          <a href="feminino.html">Feminino</a>
+        </div>
+      </div>
+      <a href="home.html">Home</a>
+    </nav>
+  </div>
+
+  <div class="carrinho-container" onclick="abrirCarrinho()">
+    <span id="icone-carrinho">🛒</span>
+    <span id="carrinho-count">0</span>
+  </div>
+</header>
+
+<section class="banner-promocao">
+  <h2>🔥 Mega Promoção de Verão</h2>
+  <p>Descontos especiais em roupas, calçados e acessórios selecionados</p>
+</section>
+
+<h2 class="titulo">Ofertas Imperdíveis</h2>
+
+<div class="grid-produtos promocoes-grid">
+
+  <div class="card">
+    <img src="Imagens/Vestido_Floral.jpg" alt="Vestido Floral Primavera">
+    <h3>Vestido Floral Primavera</h3>
+    <p class="preco-antigo">R$ 129,90</p>
+    <p class="preco">R$ 99,90</p>
+    <button onclick="abrirModal('Vestido Floral Primavera', 'R$ 99,90', 'Imagens/Vestido_Floral.jpg', 'Vestido floral leve e elegante, perfeito para dias quentes e ocasiões casuais.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Blusa Cropped Moderna.webp" alt="Blusa Cropped Moderna">
+    <h3>Blusa Cropped Moderna</h3>
+    <p class="preco-antigo">R$ 89,90</p>
+    <p class="preco">R$ 59,90</p>
+    <button onclick="abrirModal('Blusa Cropped Moderna', 'R$ 59,90', 'Imagens/Blusa Cropped Moderna.webp', 'Blusa cropped moderna, ideal para compor looks estilosos e confortáveis.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Tênis Casual Urbano.jpg" alt="Tênis Casual Urbano">
+    <h3>Tênis Casual Urbano</h3>
+    <p class="preco-antigo">R$ 159,90</p>
+    <p class="preco">R$ 119,90</p>
+    <button onclick="abrirModal('Tênis Casual Urbano', 'R$ 119,90', 'Imagens/Tênis Casual Urbano.jpg', 'Tênis casual versátil, confortável para o dia a dia e fácil de combinar com vários estilos.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Calça Jeans Reta.jpg" alt="Calça Jeans Reta">
+    <h3>Calça Jeans Reta</h3>
+    <p class="preco-antigo">R$ 139,90</p>
+    <p class="preco">R$ 99,90</p>
+    <button onclick="abrirModal('Calça Jeans Reta', 'R$ 99,90', 'Imagens/Calça Jeans Reta.jpg', 'Calça jeans reta com caimento clássico, indicada para looks casuais e sociais leves.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Blusa Básica Algodão.webp" alt="Blusa Básica Algodão">
+    <h3>Blusa Básica Algodão</h3>
+    <p class="preco-antigo">R$ 69,90</p>
+    <p class="preco">R$ 44,90</p>
+    <button onclick="abrirModal('Blusa Básica Algodão', 'R$ 44,90', 'Imagens/Blusa Básica Algodão.webp', 'Blusa básica de algodão, macia, leve e perfeita para usar em qualquer ocasião.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Calça Cargo Street.png" alt="Calça Cargo Street">
+    <h3>Calça Cargo Street</h3>
+    <p class="preco-antigo">R$ 149,90</p>
+    <p class="preco">R$ 109,90</p>
+    <button onclick="abrirModal('Calça Cargo Street', 'R$ 109,90', 'Imagens/Calça Cargo Street.png', 'Calça cargo com estilo urbano, bolsos laterais e visual moderno para looks streetwear.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Vestido_Longo.webp" alt="Vestido Longo Elegante">
+    <h3>Vestido Longo Elegante</h3>
+    <p class="preco-antigo">R$ 159,90</p>
+    <p class="preco">R$ 109,90</p>
+    <button onclick="abrirModal('Vestido Longo Elegante', 'R$ 109,90', 'Imagens/Vestido_Longo.webp', 'Vestido longo elegante, ideal para eventos, encontros e ocasiões especiais.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Tênis Running Leve.webp" alt="Tênis Running Leve">
+    <h3>Tênis Running Leve</h3>
+    <p class="preco-antigo">R$ 179,90</p>
+    <p class="preco">R$ 129,90</p>
+    <button onclick="abrirModal('Tênis Running Leve', 'R$ 129,90', 'Imagens/Tênis Running Leve.webp', 'Tênis leve e confortável, indicado para caminhadas, treinos leves e uso diário.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Blusa Gola Alta Elegante.png" alt="Blusa Gola Alta Elegante">
+    <h3>Blusa Gola Alta Elegante</h3>
+    <p class="preco-antigo">R$ 99,90</p>
+    <p class="preco">R$ 74,90</p>
+    <button onclick="abrirModal('Blusa Gola Alta Elegante', 'R$ 74,90', 'Imagens/Blusa Gola Alta Elegante.png', 'Blusa de gola alta com estilo elegante, ótima para compor looks modernos e sofisticados.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagens/Calça Moletom Confort.webp" alt="Calça Moletom Confort">
+    <h3>Calça Moletom Confort</h3>
+    <p class="preco-antigo">R$ 129,90</p>
+    <p class="preco">R$ 89,90</p>
+    <button onclick="abrirModal('Calça Moletom Confort', 'R$ 89,90', 'Imagens/Calça Moletom Confort.webp', 'Calça de moletom confortável, ideal para momentos de descanso, treino ou uso casual.')">
+      Ver Detalhes
+    </button>
+  </div>
+
+</div>
+
+<div id="modalProduto" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <div class="modal-body">
+      <img id="modalImg" src="" alt="Produto">
+      <div class="modal-info">
+        <h2 id="modalNome"></h2>
+        <p id="modalPreco"></p>
+        <p id="modalDescricao" style="margin: 15px 0; color: #666;"></p>
+        <button class="btn-comprar">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="janela-carrinho" class="modal">
+  <div class="modal-content carrinho-lateral">
+    <span class="close" onclick="fecharCarrinho()">&times;</span>
+    <h2>Meu Carrinho</h2>
+
+    <div id="lista-carrinho"></div>
+
+    <div class="carrinho-footer">
+      <div class="total-box">
+        <span>Total:</span>
+        <span id="valor-total">R$ 0,00</span>
+      </div>
+      <button class="btn-finalizar">Finalizar Compra</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p>Email: contato@luxcas.com</p>
+      <p>Telefone: (19) 99999-9999</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Atendimento</h3>
+      <p>Seg a Sex: 9h às 18h</p>
+      <p>Sábado: 9h às 13h</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Ajuda</h3>
+      <p>Trocas e Devoluções</p>
+      <p>Política de Privacidade</p>
+      <p>Termos de Uso</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Redes Sociais</h3>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>WhatsApp</p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2026 - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
